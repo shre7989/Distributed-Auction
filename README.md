@@ -2,6 +2,8 @@
 
 **Introduction:**
 This Project simulates a system of multiple Auction houses selling multiple items, multiple Agents who bid on these items and a Bank to keep track of the involved transactions. It consists of three main parts which are:
+
+
     - **Bank:** The bank is static and at a known address. You’ll start this program before either
             agents or auction houses. (The bank is a server and the agents and auction houses  
             are its clients.)Both agents and auction houses will have bank accounts. When an 
