@@ -1,6 +1,6 @@
-**Walkthrough**
+#Getting started
 
-**Introduction:**
+# Introduction:
 This Project simulates a system of multiple Auction houses selling multiple items, multiple Agents who bid on these items and a Bank to keep track of the involved transactions. It consists of three main parts which are:
 
 
