@@ -2,7 +2,7 @@
 This Project simulates a system of multiple Auction houses selling multiple items, multiple Agents who bid on these items and a Bank to keep track of the involved transactions. It consists of three main parts which are:
 
 
-    - **Bank:** The bank is static and at a known address. You’ll start this program before either
+    - Bank: The bank is static and at a known address. You’ll start this program before either
             agents or auction houses. (The bank is a server and the agents and auction houses  
             are its clients.)Both agents and auction houses will have bank accounts. When an 
             agent bids on or or is outbid in an auction, the bank will block or unblock the  
@@ -13,7 +13,7 @@ This Project simulates a system of multiple Auction houses selling multiple item
             auction houses and their addresses so the agents will be able to connect directly to 
             the auction houses. 
 
-    - **Auction House:** Each auction house is dynamically created. Upon creation, it registers 
+    - Auction House: Each auction house is dynamically created. Upon creation, it registers 
                      with the bank, opening an account with zero balance. It also provides the 
                      bank with its host and port address1, so the bank can inform the agents of 
                      the existence of this auction house. (An auction house is a client of the 
@@ -28,7 +28,7 @@ This Project simulates a system of multiple Auction houses selling multiple item
                      program when no bidding activity is in progress. The program should not 
                      allow exit when there are still bids to be resolved. At termination, it 
                      de-registers with the bank. 
-    - **Agent:** Each agent is dynamically created. Upon creation, it opens a bank account by
+    - Agent: Each agent is dynamically created. Upon creation, it opens a bank account by
                  providing a name and an initial balance, and receives a unique account number.
                  (The agent is a client of both the bank and the auction houses.)The agent gets 
                  a list of active auction houses from the bank. In connects to an auction house 
@@ -60,13 +60,13 @@ This Project simulates a system of multiple Auction houses selling multiple item
           be done by pressing the Register account button in the top right corner.
         - There are two tabs in the Agent GUI 
 
-          1) **log tab:** This tab contains a log that prints out all the updates and transactions 
+          1) log tab: This tab contains a log that prints out all the updates and transactions 
           involved with the agent. It also contains a Combobox for items owned by the Agent and 
           another Combobox for Ids of Auctionhouses the Agent is connected to. Along with this, 
           just below the log area, there is a setup of text fields and a bid button to help the 
           agent to make a bid for a particular item in a particular auction with the specified 
           amount. 
-          **To make a bid : **
+          To make a bid : 
              - Enter the amount you want to bid in the amount Field. 
              - Enter the Item id for the item you want to bid for. Enter the Auction Id for the 
                Auction hosting this item. 
@@ -74,16 +74,16 @@ This Project simulates a system of multiple Auction houses selling multiple item
           Your bid will be held for 10 seconds if it is not valid, After the 10 seconds, if no 
           other Agent outbids you for that item, you will pay for the item through the bank to t
           he hosting Auction house and the item will be added to your inventory. 
-          **Invalid Bid Cases:**
+          Invalid Bid Cases:
              - If the amount entered is less than the current highest bid.
              - If the amount entered is greater than available balance in the account.
              - If the item id does not belong to any item in the Auction house.
              - If the Auction Id entered is Invalid.
-          **Exit case:** If you want to exit from the GUI, exit by pressing the close account button 
+          Exit case: If you want to exit from the GUI, exit by pressing the close account button 
           at the top right of the window. Agent cannot exit if it has any bidding activity in 
           progress.
 
-          2) **AuctionHouses tab:** This tab contains additional functionalities for the Agents. The 
+          2) AuctionHouses tab: This tab contains additional functionalities for the Agents. The 
           agents can request the available Auction houses registered with the bank. To utilize 
           this, the Agent needs to be registered with the bank. Agents can also connect to an 
           Auction house given its auction Id by entering the AuctionId in the field provided in 
