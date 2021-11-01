@@ -47,18 +47,18 @@ This Project simulates a system of multiple Auction houses selling multiple item
                  resolved. It deregisters with the bank upon termination.
 
 # Tutorial:
-         - If you are using the .jar files to simulate Auction Houses, place the resource folder 
+         If you are using the .jar files to simulate Auction Houses, place the resource folder 
          where the jar files are. The items.txt file for the Auction Houses are in the resource 
          folder. Should you choose to edit the items file, please do so in the following manner ]
          to maintain the integrity of the file.
               1) Each line represents property description for an item, and is in the following 
                  format: (Item name) (Base price) (item id) (description)
               2) Item ids for the items should be unique and should not allow any duplicates.
-        - Agent.jar is the only jar file which uses javafx GUI. Bank and AuctionHouses live 
+        Agent.jar is the only jar file which uses javafx GUI. Bank and AuctionHouses live 
           updates for updates in the simulation in the command line.
-        - Every Agent must register an account with the bank to utilize its services. This can 
+        Every Agent must register an account with the bank to utilize its services. This can 
           be done by pressing the Register account button in the top right corner.
-        - There are two tabs in the Agent GUI 
+        There are two tabs in the Agent GUI 
 
           1) log tab: This tab contains a log that prints out all the updates and transactions 
           involved with the agent. It also contains a Combobox for items owned by the Agent and 
