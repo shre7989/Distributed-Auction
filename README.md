@@ -1,6 +1,4 @@
-#Getting started
-
-# Introduction:
+# Getting Started:
 This Project simulates a system of multiple Auction houses selling multiple items, multiple Agents who bid on these items and a Bank to keep track of the involved transactions. It consists of three main parts which are:
 
 
@@ -48,7 +46,7 @@ This Project simulates a system of multiple Auction houses selling multiple item
                  progress. The program does not allow exit when there are still bids to be
                  resolved. It deregisters with the bank upon termination.
 
-**Tutorial:**
+# Tutorial:
          - If you are using the .jar files to simulate Auction Houses, place the resource folder 
          where the jar files are. The items.txt file for the Auction Houses are in the resource 
          folder. Should you choose to edit the items file, please do so in the following manner ]
